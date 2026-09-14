@@ -1,0 +1,1348 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="학생부종합전형 면접 대비 방과후 2차시 90분 수업안 — 답변 개요 만들고 소리 내기">
+<style>
+*{box-sizing:border-box}
+html{color-scheme:light dark}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>2차시 · 답변 만들고 소리 내기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  --ground:#f1f4f3;
+  --surface:#ffffff;
+  --surface-2:#e9eeec;
+  --ink:#131e1b;
+  --ink-2:#485753;
+  --ink-3:#6f7d79;
+  --rule:#d3dbd8;
+  --rule-strong:#b6c2be;
+  --accent:#0f574c;
+  --accent-ink:#0b433a;
+  --accent-soft:#e0ebe8;
+  --warm:#8a5a12;
+  --warm-soft:#f4ecdc;
+  --alert:#8f3324;
+  --alert-soft:#f7e7e3;
+
+  --f-display:"Gowun Batang","Nanum Myeongjo",serif;
+  --f-body:"IBM Plex Sans KR","Malgun Gothic","맑은 고딕",sans-serif;
+  --f-num:"IBM Plex Mono",ui-monospace,monospace;
+
+  --wrap:min(1020px,93vw);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#101614; --surface:#171e1c; --surface-2:#1f2724;
+    --ink:#e6edea; --ink-2:#a9b7b3; --ink-3:#85938f;
+    --rule:#2a3532; --rule-strong:#3d4a46;
+    --accent:#5cc0ac; --accent-ink:#8ad8c7; --accent-soft:#173430;
+    --warm:#d9ad63; --warm-soft:#302818;
+    --alert:#e6907c; --alert-soft:#361f1a;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101614; --surface:#171e1c; --surface-2:#1f2724;
+  --ink:#e6edea; --ink-2:#a9b7b3; --ink-3:#85938f;
+  --rule:#2a3532; --rule-strong:#3d4a46;
+  --accent:#5cc0ac; --accent-ink:#8ad8c7; --accent-soft:#173430;
+  --warm:#d9ad63; --warm-soft:#302818;
+  --alert:#e6907c; --alert-soft:#361f1a;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground);color:var(--ink);
+  font-family:var(--f-body);font-weight:400;font-size:17px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+.page{width:var(--wrap);margin:0 auto;padding:0 0 100px}
+
+/* ── 차시 이동 ────────────────────────────── */
+.lessonnav{display:flex;gap:8px;align-items:center;padding:18px 0 2px;flex-wrap:wrap}
+.lessonnav a,.lessonnav > span{
+  font-size:13.5px;font-weight:600;padding:6px 14px;border-radius:3px;
+  text-decoration:none;border:1px solid var(--rule-strong);
+  color:var(--ink-2);background:var(--surface);line-height:1.5;
+}
+.lessonnav a:hover{border-color:var(--accent);color:var(--accent)}
+.lessonnav a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.lessonnav .cur{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+:root[data-theme="dark"] .lessonnav .cur,:root:not([data-theme="light"]) .lessonnav .cur{color:#0d1614}
+.lessonnav .soon{color:var(--ink-3);background:transparent;border-style:dashed}
+
+/* ── masthead ─────────────────────────────── */
+.masthead{padding:52px 0 26px;border-bottom:2px solid var(--ink);display:flex;flex-direction:column;gap:16px}
+.eyebrow{font-size:13px;letter-spacing:.06em;color:var(--accent);font-weight:600}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(34px,5.2vw,54px);line-height:1.18;letter-spacing:-.01em;margin:0;text-wrap:balance}
+.facts{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--rule);padding-top:16px}
+.fact{padding-right:26px;margin-right:26px;border-right:1px solid var(--rule)}
+.fact:last-child{border-right:none;margin-right:0;padding-right:0}
+.fact dt{font-size:12px;letter-spacing:.04em;color:var(--ink-3);margin:0 0 2px;font-weight:500}
+.fact dd{margin:0;font-size:15.5px;font-weight:600}
+
+/* ── sections ─────────────────────────────── */
+section{margin-top:66px}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--rule-strong);padding-bottom:10px;margin-bottom:26px;flex-wrap:wrap}
+.sec-num{font-family:var(--f-num);font-size:14px;font-weight:500;color:var(--accent)}
+h2{font-family:var(--f-display);font-weight:700;font-size:clamp(23px,3.1vw,30px);margin:0;letter-spacing:-.005em}
+.sec-note{margin-left:auto;font-size:13.5px;color:var(--ink-3);font-weight:500}
+h3{font-weight:600;font-size:17.5px;margin:0 0 8px;letter-spacing:-.005em}
+p{margin:0 0 12px;max-width:70ch}
+p:last-child{margin-bottom:0}
+strong,b{font-weight:600}
+em{font-style:normal;background:var(--accent-soft);color:var(--accent-ink);padding:0 4px;border-radius:2px}
+
+/* ── buttons ──────────────────────────────── */
+.btn{
+  font-family:var(--f-body);font-size:14px;font-weight:600;
+  color:var(--surface);background:var(--accent);
+  border:none;border-radius:3px;padding:9px 18px;cursor:pointer;
+  letter-spacing:.01em;line-height:1.4;
+}
+.btn:hover{background:var(--accent-ink)}
+:root[data-theme="dark"] .btn,:root:not([data-theme="light"]) .btn{color:#0d1614}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.btn.ghost{background:transparent;color:var(--ink-2);border:1px solid var(--rule-strong);font-weight:500}
+.btn.ghost:hover{background:var(--surface-2);color:var(--ink)}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:20px}
+.btn-hint{font-size:13.5px;color:var(--ink-3)}
+
+/* ── teacher note ─────────────────────────── */
+.tnote{
+  border-left:3px solid var(--rule-strong);background:var(--surface-2);
+  padding:11px 15px;margin-top:10px;font-size:14px;line-height:1.65;color:var(--ink-2);
+}
+.tnote b{color:var(--ink)}
+.tnote .say{
+  font-family:var(--f-display);font-size:15px;color:var(--ink);
+  border-left:2px solid var(--accent);padding-left:11px;margin-top:8px;
+}
+
+/* ── roadmap ──────────────────────────────── */
+.roadmap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.leg{background:var(--surface);padding:22px 20px 24px;display:flex;flex-direction:column;gap:13px}
+.leg.now{background:var(--accent-soft)}
+.leg.done{opacity:.72}
+.leg-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.leg-n{font-family:var(--f-num);font-size:13px;color:var(--accent);font-weight:500}
+.leg-tag{font-size:11.5px;font-weight:600;color:var(--surface);background:var(--accent);padding:2px 9px;border-radius:2px}
+:root[data-theme="dark"] .leg-tag,:root:not([data-theme="light"]) .leg-tag{color:#0d1614}
+.leg-tag.mute{background:transparent;color:var(--ink-3);border:1px solid var(--rule-strong)}
+:root[data-theme="dark"] .leg-tag.mute,:root:not([data-theme="light"]) .leg-tag.mute{color:var(--ink-3)}
+.leg h3{font-family:var(--f-display);font-size:21px;font-weight:700;margin:0}
+.leg dl{margin:0;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--rule);padding-top:12px}
+.leg dt{font-size:12px;letter-spacing:.03em;color:var(--ink-3);font-weight:500}
+.leg dd{margin:2px 0 0;font-size:14.5px;line-height:1.6}
+
+/* ── run sheet ────────────────────────────── */
+.run{border-top:1px solid var(--rule-strong)}
+.slot{display:grid;grid-template-columns:118px 1fr;border-bottom:1px solid var(--rule)}
+.slot-time{font-family:var(--f-num);font-size:14px;font-variant-numeric:tabular-nums;color:var(--ink-3);padding:17px 16px 17px 0;line-height:1.5;border-right:1px solid var(--rule)}
+.slot-time b{display:block;color:var(--ink);font-weight:500;font-size:15px}
+.slot-body{padding:17px 0 17px 20px}
+.slot-kind{display:inline-block;font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:2px;margin-bottom:7px;background:var(--accent-soft);color:var(--accent-ink)}
+.slot-kind.act{background:var(--warm-soft);color:var(--warm)}
+.slot-kind.beat{background:var(--surface-2);color:var(--ink-3)}
+.slot-body h3{margin:0 0 4px}
+.slot-body p{font-size:15px;color:var(--ink-2);margin:0}
+
+/* ── blocks ───────────────────────────────── */
+.block{background:var(--surface);border:1px solid var(--rule);padding:24px 26px;margin-bottom:14px}
+.block-head{display:flex;align-items:baseline;gap:12px;margin-bottom:15px;flex-wrap:wrap}
+.block-key{font-family:var(--f-num);font-size:13px;color:var(--accent);font-weight:500}
+.block h3{font-family:var(--f-display);font-size:21px;font-weight:700;margin:0}
+.block .min{margin-left:auto;font-family:var(--f-num);font-size:12px;color:var(--warm)}
+ul.tight{margin:0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+ul.tight > li{padding-left:16px;position:relative;font-size:15.5px;line-height:1.7;max-width:72ch}
+ul.tight > li::before{content:"";position:absolute;left:0;top:.75em;width:7px;height:1px;background:var(--rule-strong)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mini{border:1px solid var(--rule);background:var(--surface);padding:18px 20px}
+.mini h4{font-size:14.5px;font-weight:600;margin:0 0 10px;color:var(--accent-ink)}
+:root[data-theme="dark"] .mini h4,:root:not([data-theme="light"]) .mini h4{color:var(--accent)}
+.mini ol{margin:0;padding-left:19px;font-size:15px;line-height:1.7;display:flex;flex-direction:column;gap:6px}
+.mini ul.tight > li{font-size:15px}
+
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12.5px;letter-spacing:.02em;color:var(--ink-3);font-weight:600;background:var(--surface-2);white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.k{font-weight:600;white-space:nowrap;width:1%}
+td .num{font-family:var(--f-num);font-variant-numeric:tabular-nums;color:var(--accent)}
+
+.warn{border-left:3px solid var(--alert);background:var(--alert-soft);padding:15px 18px;font-size:15px;line-height:1.7;color:var(--ink-2)}
+.warn b{color:var(--alert)}
+.good{border-left:3px solid var(--accent);background:var(--accent-soft);padding:15px 18px;font-size:15px;line-height:1.7;color:var(--ink-2)}
+.good b{color:var(--accent-ink)}
+:root[data-theme="dark"] .good b,:root:not([data-theme="light"]) .good b{color:var(--accent)}
+
+/* ── 말하기 훈련 3단계 ────────────────────── */
+.stair{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.step{background:var(--surface);padding:20px;display:flex;flex-direction:column;gap:10px}
+.step.here{background:var(--accent-soft)}
+.step.past{opacity:.62}
+.step.past h4{font-weight:400}
+.step-n{font-family:var(--f-num);font-size:12px;color:var(--accent);font-weight:500}
+.step h4{font-family:var(--f-display);font-size:19px;font-weight:700;margin:0}
+.step p{font-size:14.5px;color:var(--ink-2);margin:0;line-height:1.65}
+.step .when{margin-top:auto;padding-top:10px;border-top:1px solid var(--rule);font-size:12.5px;color:var(--ink-3);font-weight:600}
+.step.here .when{color:var(--accent-ink)}
+:root[data-theme="dark"] .step.here .when,:root:not([data-theme="light"]) .step.here .when{color:var(--accent)}
+
+/* ── 프레임 (결론·근거·의미) ──────────────── */
+.frame{display:grid;grid-template-columns:96px 1fr 1fr;border:1px solid var(--rule-strong);background:var(--surface)}
+.frame > *{border-bottom:1px solid var(--rule);padding:13px 15px;font-size:15px;line-height:1.65}
+.frame > .fh{background:var(--surface-2);font-size:12.5px;font-weight:600;color:var(--ink-3);letter-spacing:.02em}
+.frame > .fl{background:var(--surface-2);font-weight:600;border-right:1px solid var(--rule-strong);font-size:15px}
+.frame > .fr{border-right:1px solid var(--rule)}
+.frame > .fx-ex{color:var(--ink-2);font-family:var(--f-display);font-size:15.5px}
+.frame > :nth-last-child(-n+3){border-bottom:none}
+
+/* ── STAR ─────────────────────────────────── */
+.map-wrap{border:1px solid var(--rule);background:var(--surface);padding:18px;overflow-x:auto}
+.map-wrap svg{display:block;width:100%;min-width:720px;height:auto}
+.starcards{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.sc{background:var(--surface);padding:18px 18px 20px;display:flex;flex-direction:column;gap:9px}
+.sc-l{font-family:var(--f-display);font-size:30px;font-weight:700;line-height:1;color:var(--accent)}
+.sc h4{font-size:15.5px;font-weight:600;margin:0}
+.sc p{font-size:14px;color:var(--ink-2);margin:0;line-height:1.6}
+.sc .ex{margin-top:auto;padding-top:10px;border-top:1px solid var(--rule);font-family:var(--f-display);font-size:14.5px;color:var(--ink);line-height:1.55}
+
+/* 나쁜 답변 → 개요 → 완성 답변 */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.ba-col{border:1px solid var(--rule);background:var(--surface);display:flex;flex-direction:column}
+.ba-col.bad{border-top:4px solid var(--alert)}
+.ba-col.ok{border-top:4px solid var(--accent)}
+.ba-h{padding:13px 18px 11px;border-bottom:1px solid var(--rule);font-size:13px;font-weight:600}
+.ba-col.bad .ba-h{color:var(--alert)}
+.ba-col.ok .ba-h{color:var(--accent)}
+.ba-t{padding:16px 18px;font-family:var(--f-display);font-size:15.5px;line-height:1.7}
+.ba-why{padding:12px 18px;border-top:1px solid var(--rule);background:var(--surface-2);font-size:13.5px;color:var(--ink-2);line-height:1.6;margin-top:auto}
+
+.outline{border:1px solid var(--rule-strong);background:var(--surface);display:grid;grid-template-columns:44px 1fr}
+.outline > *{border-bottom:1px solid var(--rule);padding:11px 14px;font-size:15px}
+.outline > .ol{background:var(--surface-2);font-family:var(--f-display);font-weight:700;color:var(--accent);border-right:1px solid var(--rule-strong);text-align:center}
+.outline > .ol.head{color:var(--warm);background:var(--warm-soft)}
+.outline > .head-v{background:var(--warm-soft);font-weight:600}
+.outline > :nth-last-child(-n+2){border-bottom:none}
+
+/* ── 질문 등급 ────────────────────────────── */
+.qpair{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-bottom:1px}
+.qp-src{grid-column:1 / -1;background:var(--surface-2);padding:10px 16px;font-size:13.5px;color:var(--ink-2);line-height:1.55}
+.qp-src b{color:var(--ink-3);font-weight:600;margin-right:8px;font-size:12px}
+.qp{background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:7px}
+.qp-l{font-size:11.5px;font-weight:600;letter-spacing:.02em}
+.qp.a .qp-l{color:var(--alert)}
+.qp.b .qp-l{color:var(--accent)}
+.qp-q{font-size:15px;line-height:1.6;margin:0}
+.qp-why{grid-column:1 / -1;background:var(--surface);padding:11px 16px;font-size:13.5px;color:var(--ink-2);line-height:1.6;border-top:1px solid var(--rule)}
+.qp-why b{color:var(--ink)}
+
+.rubric{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.rb{background:var(--surface);padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.rb-g{font-family:var(--f-display);font-size:26px;font-weight:700;line-height:1}
+.rb.c .rb-g{color:var(--alert)} .rb.b .rb-g{color:var(--warm)} .rb.a .rb-g{color:var(--accent)}
+.rb p{font-size:14.5px;margin:0;line-height:1.6}
+.rb .t{font-size:13.5px;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:9px;margin-top:auto}
+
+/* ── 계열 탭 ──────────────────────────────── */
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
+.tab{
+  font-family:var(--f-body);font-size:13.5px;font-weight:600;padding:7px 15px;border-radius:3px;
+  border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-2);cursor:pointer;line-height:1.5;
+}
+.tab:hover{border-color:var(--accent);color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.tab.cur{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+:root[data-theme="dark"] .tab.cur,:root:not([data-theme="light"]) .tab.cur{color:#0d1614}
+.trackpanel.off{display:none}
+
+/* ── 활동지 ───────────────────────────────── */
+.sheet{background:var(--surface);border:2px solid var(--ink);padding:32px 34px}
+.sheet-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:1.5px solid var(--ink);padding-bottom:12px;margin-bottom:24px;flex-wrap:wrap}
+.sheet-head h3{font-family:var(--f-display);font-size:24px;font-weight:700;margin:0}
+.namebox{font-size:13.5px;color:var(--ink-2);white-space:nowrap}
+.sheet-part{margin-bottom:28px}
+.sheet-part:last-child{margin-bottom:0}
+.part-label{font-size:12.5px;letter-spacing:.02em;color:var(--accent);margin-bottom:8px;font-weight:600}
+.gtable td{height:42px}
+.gtable td:first-child{width:1%;font-family:var(--f-num);color:var(--ink-3);text-align:center}
+.gtable .c-g{width:12%;text-align:center;font-family:var(--f-num);color:var(--ink-3);letter-spacing:.3em}
+.starsheet{border:1px solid var(--rule-strong);margin-bottom:10px}
+.starsheet .ss-q{border-bottom:1px solid var(--rule-strong);background:var(--surface-2);padding:10px 14px;font-size:13.5px;color:var(--ink-2)}
+.starsheet .ss-row{display:grid;grid-template-columns:44px 1fr;border-bottom:1px solid var(--rule)}
+.starsheet .ss-row:last-child{border-bottom:none}
+.starsheet .ss-l{background:var(--surface-2);font-family:var(--f-display);font-weight:700;color:var(--accent);border-right:1px solid var(--rule-strong);text-align:center;padding:11px 0;font-size:15px}
+.starsheet .ss-l.head{color:var(--warm);background:var(--warm-soft)}
+.starsheet .ss-row:first-of-type .ss-v{background:var(--warm-soft)}
+.starsheet .ss-v{padding:11px 14px;min-height:40px;font-size:13px;color:var(--ink-3)}
+.check td:first-child{width:1%;white-space:nowrap;font-family:var(--f-num);color:var(--ink-3)}
+.check td:last-child{width:1%;white-space:nowrap;font-family:var(--f-num);letter-spacing:.35em;color:var(--ink-3)}
+.check thead th:nth-child(n+3){text-align:center}
+.check td:nth-child(3){width:1%;white-space:nowrap;font-family:var(--f-num);letter-spacing:.35em;color:var(--ink-3)}
+
+.closing{
+  font-family:var(--f-display);font-size:21px;line-height:1.6;color:var(--ink);
+  border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);
+  padding:22px 0;margin-top:22px;max-width:62ch;
+}
+
+@media (max-width:860px){
+  .roadmap,.grid2,.grid3,.ba,.qpair,.rubric,.stair{grid-template-columns:1fr}
+  .starcards{grid-template-columns:1fr 1fr}
+  .frame{grid-template-columns:78px 1fr}
+  .frame > .fh:first-child{grid-column:1 / -1}
+  .slot{grid-template-columns:86px 1fr}
+  .slot-body{padding-left:14px}
+  .fact{padding-right:16px;margin-right:16px}
+  .qp-why{border-top:1px solid var(--rule)}
+}
+
+/* ── toolbar / edit mode ──────────────────── */
+.toolbar{
+  position:sticky;top:0;z-index:20;
+  display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+  padding:10px 0;background:var(--ground);
+  border-bottom:1px solid var(--rule);
+}
+.toolbar .btn-hint{margin-left:auto}
+body.editing #content{outline:2px dashed var(--accent);outline-offset:10px;border-radius:2px}
+body.editing #content h1,body.editing #content h2,body.editing #content h3,
+body.editing #content p,body.editing #content li,body.editing #content td,body.editing #content th{cursor:text}
+body.editing .toolbar{background:var(--accent-soft)}
+#content:focus{outline-color:var(--accent)}
+
+@media print{
+  body{background:#fff;color:#000}
+  .noprint{display:none!important}
+  .toolbar,.lessonnav,.tabs{display:none!important}
+  .page{width:100%;padding:0}
+  .sheet{border:1.5px solid #000;padding:0}
+  .trackpanel.off{display:block}
+  body.editing #content{outline:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<nav class="lessonnav noprint">
+  <a href="index.html">1차시 · 기본기와 질문 만들기</a>
+  <span class="cur">2차시 · 답변 만들고 소리 내기</span>
+  <span class="soon">3차시 · 상호 모의면접</span>
+</nav>
+
+<div class="toolbar noprint">
+  <button class="btn" id="editBtn" data-show="문구 편집" data-hide="편집 끝내고 저장">문구 편집</button>
+  <button class="btn ghost" id="resetBtn" hidden>편집 내용 모두 되돌리기</button>
+  <span class="btn-hint" id="editHint">글씨를 눌러 바로 고칠 수 있습니다. 고친 내용은 이 브라우저에 저장됩니다.</span>
+</div>
+
+<div id="content">
+
+<header class="masthead">
+  <div class="eyebrow">방과후 심화 · 학생부종합전형 면접</div>
+  <h1>외운 문장은 버리고, 다섯 줄만 남긴다</h1>
+  <dl class="facts">
+    <div class="fact"><dt>오늘</dt><dd>2차시 · 90분</dd></div>
+    <div class="fact"><dt>책상 위에</dt><dd>지난 시간 질문 10개 · 형광펜 친 학생부 · 1차시 활동지</dd></div>
+    <div class="fact"><dt>오늘의 결승선</dt><dd>답변 개요 3장 · 30초 자기소개 확정본</dd></div>
+  </dl>
+</header>
+
+<!-- 01 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-num">01</span>
+    <h2>세 시간이 어떻게 이어지는가</h2>
+    <span class="sec-note">3차시 × 90분</span>
+  </div>
+
+  <div class="roadmap">
+    <article class="leg done">
+      <div class="leg-top"><span class="leg-n">1차시</span><span class="leg-tag mute">지난 시간</span></div>
+      <h3>기본기와 질문 만들기</h3>
+      <dl>
+        <div><dt>했던 것</dt><dd>자기소개 진단, 면접 기본기, 학생부 3역량</dd></div>
+        <div><dt>냈던 것</dt><dd>내 학생부에서 뽑은 예상 질문 10개</dd></div>
+      </dl>
+    </article>
+
+    <article class="leg now">
+      <div class="leg-top"><span class="leg-n">2차시</span><span class="leg-tag">오늘</span></div>
+      <h3>답변 만들고 소리 내기</h3>
+      <dl>
+        <div><dt>고르기</dt><dd>내 질문 열 개를 A·B·C로 스스로 매긴다. C는 다시 쓴다</dd></div>
+        <div><dt>배우기</dt><dd>STAR — 경험을 네 칸으로 쪼개 점검하는 법</dd></div>
+        <div><dt>만들기</dt><dd>답변 개요. 문장이 아니라 <em>결론 한 줄 + 네 칸</em></dd></div>
+        <div><dt>해 보기</dt><dd>30초 자기소개 확정, 개요만 보고 말하기</dd></div>
+      </dl>
+    </article>
+
+    <article class="leg">
+      <div class="leg-top"><span class="leg-n">3차시</span></div>
+      <h3>상호 모의면접</h3>
+      <dl>
+        <div><dt>편성</dt><dd>3인 1조 — 지원자 · 면접관 · 기록관, 전원 돌아가며</dd></div>
+        <div><dt>해 보기</dt><dd>대기부터 퇴실까지 전 과정, 8분 면접, 꼬리질문 최소 2단</dd></div>
+        <div><dt>쓰는 것</dt><dd>내가 낸 질문지. 단 개요는 <b>덮고</b> 말한다</dd></div>
+      </dl>
+    </article>
+  </div>
+
+  <h3 style="margin-top:30px">말하기 훈련에는 정해진 순서가 있다</h3>
+  <div class="stair" style="margin-top:12px">
+    <article class="step past">
+      <span class="step-n">1단계</span>
+      <h4>글로 쓴다</h4>
+      <p>답변을 문장으로 다 적어 본다. 3분 분량이면 1,200자, 논술 답안 한 편과 맞먹는다.</p>
+      <div class="when">각자 이미 지난 구간</div>
+    </article>
+    <article class="step past">
+      <span class="step-n">2단계</span>
+      <h4>소리 내어 읽는다</h4>
+      <p>눈으로 읽는 것과 입으로 읽는 것은 전혀 다르다. 여러 번 읽어 입에 붙인다.</p>
+      <div class="when">각자 이미 지난 구간</div>
+    </article>
+    <article class="step here">
+      <span class="step-n">3단계</span>
+      <h4>개요만 놓고 말한다</h4>
+      <p>원고를 치운다. 키워드만 남기고 그 위에 말로 살을 붙인다. 같은 내용을 두 번 말해도 문장은 매번 달라진다.</p>
+      <div class="when">오늘 여기</div>
+    </article>
+    <article class="step">
+      <span class="step-n">4단계</span>
+      <h4>개요 없이 말한다</h4>
+      <p>종이를 덮는다. 머릿속에 남은 다섯 줄만으로 꼬리질문까지 버틴다.</p>
+      <div class="when">다음 시간 모의면접</div>
+    </article>
+  </div>
+  <div class="warn" style="margin-top:14px">
+    <b>3단계를 건너뛰면 전부 무너진다.</b> 1·2단계에서 쓴 원고를 그대로 외워 4단계로 가면, 실제 면접에서 한 문장만 막혀도 그 뒤가 전부 날아간다. 지난 시간 카드뉴스 대화가 정확히 그 장면이었다. 오늘 하는 일은 <b>원고를 개요로 줄이는 것</b> 하나다.
+  </div>
+</section>
+
+<!-- 02 진행 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-num">02</span>
+    <h2>오늘의 진행</h2>
+    <span class="sec-note">90분</span>
+  </div>
+
+  <div class="btn-row noprint" contenteditable="false">
+    <button class="btn ghost" data-toggle="tnote" aria-expanded="false" data-show="교사용 메모 보기" data-hide="교사용 메모 감추기">교사용 메모 보기</button>
+    <span class="btn-hint">진행 요령과 발문은 감춰 두었습니다.</span>
+  </div>
+
+  <div class="run">
+
+    <div class="slot">
+      <div class="slot-time"><b>00–05</b>5분</div>
+      <div class="slot-body">
+        <span class="slot-kind beat">여는 말</span>
+        <h3>돌아오는 것은 내 질문이다</h3>
+        <p>지난 시간 마지막에 한 말을 그대로 꺼낸다. 그리고 오늘 할 일의 양을 <b>줄여서 선언한다.</b> 열 개 전부가 아니라 <b>세 개를 완성</b>한다.</p>
+        <div class="tnote" hidden>
+          <b>진행</b> — 01의 4단계 그림을 띄운 채로 말한다. 약속을 조용히 어기지 말고 소리 내어 줄이는 편이 3차시 신뢰에 낫다.<br>
+          <b>준비 확인</b> — 책상 위에 형광펜 친 학생부 출력본과 1차시 활동지가 펴져 있어야 한다. 잊고 온 학생용 여분 출력본을 미리 준비해 둔다.
+          <div class="say">지난 시간 마지막에 한 말 기억합니까. 그 질문지는 다음 시간에 다른 친구 손에 들려 나를 향합니다. 오늘 만드는 개요는 그때 내가 가진 유일한 것입니다. 단, 그날은 이 종이를 덮고 말합니다.</div>
+          <div class="say">지난 시간엔 열 개 전부에 답을 만들겠다고 했습니다. 오늘은 셋만 완성합니다. 나머지 일곱은 소재만 한 줄씩 적어 두고 다음 시간 전까지 각자 채웁니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="slot-time"><b>05–15</b>10분</div>
+      <div class="slot-body">
+        <span class="slot-kind act">① 고르기</span>
+        <h3>내 질문 열 개에 A·B·C 매기기</h3>
+        <p>03 섹션의 비교 여덟 쌍을 훑은 뒤, 자기 질문에 등급을 매긴다. <b>한 개에 24초</b>, 고민하지 않는다.</p>
+        <div class="tnote" hidden>
+          <b>진행</b> — 비교 5분, 자가 등급 4분, 손들기 1분.<br>
+          <b>나쁜 예는 절대 학생 제출물에서 뽑지 않는다.</b> 20명 남짓한 방과후 교실에서 익명은 익명이 아니다. 한 번 지목당한 학생은 3차시에 입을 닫고 그 조 전체가 죽는다. 03의 얕은 질문은 전부 교사가 지어낸 것이라고 밝히고 띄운다. 좋은 예만 실제 제출물에서 두세 개 익명으로 올리되, 해당 학생에게는 수업 전에 한마디 해 둔다.<br>
+          <b>끝나고 반드시</b> — “A가 세 개 미만인 사람 손 들어 보세요.” 이 손들기가 ③·⑤에서 누구를 먼저 봐 줄지를 정한다. 25명 순회 첨삭은 한 바퀴에 17분이라 불가능하므로, 순회 대신 <b>지명 첨삭</b>으로 간다.
+          <div class="say">지난 시간엔 ‘질문이 되느냐’를 봤습니다. 오늘은 ‘답이 되느냐’를 봅니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="slot-time"><b>15–30</b>15분</div>
+      <div class="slot-body">
+        <span class="slot-kind">② 배우기</span>
+        <h3>STAR — 세 칸으로 말하고 네 칸으로 검사한다</h3>
+        <p>04 섹션의 A·B·C. 새 틀을 배우는 것이 아니라 지난 시간 <b>‘근거’ 한 칸</b>을 열어 보는 것이다.</p>
+        <div class="tnote" hidden>
+          <b>배분</b> — A 다리 놓기 4분, B 네 칸 4분, C 카드뉴스 재생 7분.<br>
+          <b>가장 중요한 4분은 A다.</b> 여기서 두 틀의 관계를 못 박지 않으면 학생 머릿속에 뼈대가 두 개로 앉고, 다섯 조각을 네 칸에 욱여넣다 순서가 엉킨다.
+          <div class="say">틀을 새로 배우는 게 아닙니다. 지난 시간 뼈대 세 칸 중 2번 근거 칸만 다시 봅니다. 여러분이 무너진 자리가 정확히 거기입니다.</div>
+          <div class="say">결론·근거·의미는 말하는 순서이고, STAR는 순서가 아니라 근거 칸이 비었는지 보는 점검표입니다. 세 칸으로 말하고, 네 칸으로 검사합니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="slot-time"><b>30–45</b>15분</div>
+      <div class="slot-body">
+        <span class="slot-kind act">③ 만들기 1</span>
+        <h3>A등급 질문 세 개에 개요 쓰기</h3>
+        <p>활동지 2번. 한 장에 <b>결론 한 줄 + 네 칸</b>. 계열이 다른 학생은 05 섹션에서 자기 계열 예시를 펴 놓고 쓴다.</p>
+        <div class="tnote" hidden>
+          <b>진행</b> — 칸별로 교사가 호명해 함께 간다. “지금 결론 한 줄, 45초” → “S, 45초” → “T와 A, 90초” → “R, 60초”. 입으로 세면 반드시 늘어지니 화면 타이머를 쓴다. 첫 장을 이렇게 같이 넘기면 둘째·셋째는 혼자 간다.<br>
+          <b>지명 첨삭</b> — ①에서 손 든 학생 4~5명만 자리로 가서 본다. 전체 순회는 시간상 불가능하다.<br>
+          <b>가장 많이 비는 칸은 A다.</b> 순회하며 볼 것은 하나, “여기 네가 한 일이 있냐”.
+          <div class="say">S와 R은 다들 잘 씁니다. 그 사이 A칸이 비어 있으면, 그건 남의 활동을 전해 듣고 말하는 겁니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="slot-time"><b>45–50</b>5분</div>
+      <div class="slot-body">
+        <span class="slot-kind beat">쉬는 시간</span>
+        <h3>화면 카운트다운</h3>
+        <p>미리 “5분 쉽니다”라고 말하지 않는다. ③이 끝나는 그 순간 화면에 5분 카운트다운을 띄운다.</p>
+        <div class="tnote" hidden><b>진행</b> — 선언하면 복귀는 반드시 7~8분이 되고, 그 2~3분이 뒤로 누적되어 마지막 구간에서 터진다. 0이 되면 설명 없이 기립 드릴로 바로 들어간다.</div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="slot-time"><b>50–60</b>10분</div>
+      <div class="slot-body">
+        <span class="slot-kind act">④ 해 보기 1</span>
+        <h3>목소리 깨우기 + 30초 자기소개 확정</h3>
+        <p>06 섹션. 기립 합창 3분 → 1차시 자기소개를 두괄식으로 고쳐 쓰기 3분 → 짝에게 30초 발표하고 채점 4분.</p>
+        <div class="tnote" hidden>
+          <b>왜 여기인가</b> — 자기소개를 맨 뒤에 두면 앞 구간이 2분씩만 밀려도 통째로 날아간다. 오늘 결승선 둘 중 하나이므로 <b>60분 지점에서 확정</b>해 둔다.<br>
+          <b>기립 합창</b> — 서로 다 아는 사이인 교실에서 개인 지명 드릴은 아무도 먼저 소리를 내지 않는다. 전원 기립해 다 함께 읽는 형식이라야 실제로 소리가 난다. 개인에게 시키는 것은 짝 앞에서만.<br>
+          <b>‘작성’이 아니라 ‘이식’이다</b> — 새로 쓰는 것이 아니라, ③에서 만든 개요 중 가장 강한 것을 2번 근거 칸에 옮겨 붙이는 일이다.
+          <div class="say">지난 시간 자기소개에는 근거가 없었습니다. 오늘은 근거를 먼저 만들어 뒀으니 그중 하나를 끼워 넣기만 하면 됩니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="slot-time"><b>60–72</b>12분</div>
+      <div class="slot-body">
+        <span class="slot-kind act">⑤ 만들기 2</span>
+        <h3>나머지 질문에 소재 한 줄 · C등급 다시 쓰기</h3>
+        <p>남은 질문 옆에 <b>“이 질문엔 ○○ 경험”</b> 한 줄만 단다. 네 칸은 채우지 않는다. C등급으로 매긴 질문은 같은 학생부 줄에서 동사만 바꿔 다시 뽑는다.</p>
+        <div class="tnote" hidden>
+          <b>배분</b> — 소재 태그 6분(질문당 40초), C 다시 쓰기 3분, 질문지 최종본 정서 3분.<br>
+          <b>네 칸을 채우게 하지 마라.</b> 일곱 개 × 다섯 줄을 12분에 넣으라면 학생은 칸 채우기 게임으로 전환해 “열심히 했습니다” 같은 공허한 개요를 양산한다. ③에서 세운 원칙이 여기서 통째로 무너진다.<br>
+          <b>3차시 안내 종이</b>를 이 시점에 미리 돌려 책상에 두게 한다.
+          <div class="say">지금은 답을 쓰는 시간이 아니라, 답할 거리가 있는지 확인하는 시간입니다. 소재가 떠오르지 않는 질문은 그 자리에서 버려도 됩니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="slot-time"><b>72–85</b>13분</div>
+      <div class="slot-body">
+        <span class="slot-kind act">⑥ 해 보기 2</span>
+        <h3>개요만 보고 말하기 — 2회전</h3>
+        <p>07 섹션. 완성 문장은 덮고 다섯 줄만 보며 짝에게 말한다. 같은 개요로 <b>두 번</b> 말하는 것이 핵심이다.</p>
+        <div class="tnote" hidden>
+          <b>진행</b> — A 1회차 → B 1회차 → 피드백 → A 2회차 → B 2회차. 각 40초, 피드백 30초.<br>
+          <b>2회차에는 규칙을 하나 얹는다</b> — 듣는 쪽이 개요에 <b>없는</b> 질문을 하나 던지고, 말하는 쪽은 1차시에 외운 위기 대응 세 문장 중 하나로 받은 뒤 이어 간다. 3차시의 실제 사고 지점을 여기서 한 번 통과시키는 것이다.<br>
+          <b>반드시 나오는 장면</b> — 1회차와 2회차가 토씨까지 똑같은 학생. 그 학생은 개요가 아니라 문장을 적어 둔 것이다. 개요를 절반으로 줄이게 한다.
+          <div class="say">두 번째가 첫 번째와 똑같이 나왔다면, 여러분은 외운 겁니다.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slot">
+      <div class="slot-time"><b>85–90</b>5분</div>
+      <div class="slot-body">
+        <span class="slot-kind beat">닫는 말</span>
+        <h3>질문지 최종본 제출 · 3차시 예고</h3>
+        <p>다듬은 질문 열 개에 꼬리질문 한 줄을 붙여 리로스쿨로 보낸다. <b>앉은 자리에서 전송을 확인한 사람부터</b> 보낸다.</p>
+        <div class="tnote" hidden>
+          <b>85–88</b> 두 문장만 짚는다 — “다음 시간에 넘어가는 것은 질문지 앞면뿐, 개요는 내가 갖는다.” 그리고 준비물 세 가지.<br>
+          <b>88–90</b> 전송. 87분이면 절반은 가방을 싸고 있으므로 말로 하는 안내는 남지 않는다. 안내는 ⑤ 시점에 돌린 종이가 하고, 이 5분은 전송 확인에만 쓴다.<br>
+          <b>교사 할 일</b> — 취합해 A4 한 장으로 출력, 3차시에 면접관 역할 학생에게 배부한다.
+          <div class="say">대충 쓴 질문은 대충 준비한 답변으로 돌아옵니다. 그런데 그 답변을 해야 하는 사람은 여러분 자신입니다.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="warn" style="margin-top:18px">
+    <b>지난 시간 질문을 못 냈거나 다섯 개 미만인 학생.</b> 시작 30초에 분기시킨다 — <b>“제출한 질문이 다섯 개 미만인 사람은 1차시 07 섹션을 펴세요.”</b> 그 학생은 ①의 10분 동안 새 질문을 만들지 말고(또 못 만든다) 1차시 기출 열 문항에서 <b>내 학생부에 그대로 붙는 것 세 개</b>를 골라 08 섹션의 다섯 동사로 자기 문장으로 바꿔 쓴다. ③·⑤는 똑같이 참여시키되 완성 기준만 <b>개요 두 장</b>으로 낮춘다. 3차시 조 편성 때 이 학생들을 한 조에 몰지 않는다.
+  </div>
+</section>
+
+<!-- 03 질문 등급 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-num">03</span>
+    <h2>내 질문은 어느 쪽인가</h2>
+    <span class="sec-note">① 05–15</span>
+  </div>
+
+  <p style="margin-bottom:18px">같은 학생부 한 줄에서 나온 두 질문이다. 왼쪽은 <b>답이 한 마디로 끝나고</b>, 오른쪽은 <b>학생부에 적히지 않은 것을 꺼내야만</b> 답이 된다. 왼쪽 여덟 개는 모두 교사가 지어낸 것이다.</p>
+
+  <div class="rubric" style="margin-bottom:22px">
+    <article class="rb a">
+      <span class="rb-g">A</span>
+      <p><b>날 선 질문</b> — 그대로 3차시에 쓴다</p>
+      <div class="t">답하려면 학생부에 안 적힌 것을 꺼내야 하는가? <b>고른 기준, 버린 선택, 안 된 부분.</b></div>
+    </article>
+    <article class="rb b">
+      <span class="rb-g">B</span>
+      <p><b>무난한 질문</b> — 동사 하나를 바꿔 다시 쓴다</p>
+      <div class="t">학생부의 그 줄을 소리 내어 읽어 주면 답이 끝나는가?</div>
+    </article>
+    <article class="rb c">
+      <span class="rb-g">C</span>
+      <p><b>질문이 아님</b> — 버리고 새로 만든다</p>
+      <div class="t">“네”, “아니요”, “좋았습니다” 한 마디로 답이 끝나는가?</div>
+    </article>
+  </div>
+
+  <div class="qpair">
+    <div class="qp-src"><b>세특</b>화학Ⅰ — 삼투압 개념을 학습한 뒤, 배추를 소금에 절이는 현상을 삼투 원리로 설명하는 보고서를 작성함.</div>
+    <div class="qp a"><span class="qp-l">얕은 질문</span><p class="qp-q">화학Ⅰ 시간에 삼투압 보고서를 썼는데, 그 보고서를 쓰면서 어떤 점을 느꼈나요?</p></div>
+    <div class="qp b"><span class="qp-l">날 선 질문</span><p class="qp-q">삼투압이 무엇인지 먼저 설명해 주시고, 여러 사례 중 배추 절임을 고른 이유를 말해 주세요. 그 예로는 설명되지 않는 부분은 없었나요?</p></div>
+    <div class="qp-why"><b>무엇이 달라졌나</b> — ‘느낀 점’을 ‘개념을 설명해 보라 + 왜 그 예인가 + 안 되는 부분은 없나’로 바꿨다. 세특은 적힌 용어를 직접 설명하게 만들어야 질문이 된다.</div>
+  </div>
+
+  <div class="qpair">
+    <div class="qp-src"><b>동아리</b>2학년 미디어문화탐구반 — 지역 축제를 소재로 카드뉴스 5장을 제작해 학급 게시판에 게시함.</div>
+    <div class="qp a"><span class="qp-l">얕은 질문</span><p class="qp-q">동아리에서 카드뉴스를 만든 활동이 본인에게 도움이 되었나요?</p></div>
+    <div class="qp b"><span class="qp-l">날 선 질문</span><p class="qp-q">글로 된 안내문 대신 카드뉴스를 고른 이유는 무엇이고, 다섯 장에 무엇을 넣고 무엇을 뺐는지 그 기준을 말해 주세요.</p></div>
+    <div class="qp-why"><b>무엇이 달라졌나</b> — ‘도움이 되었나요’(예·아니오)를 ‘무엇을 넣고 무엇을 뺐나’로 바꿨다. 버린 것을 묻는 순간, 실제로 판단한 사람인지가 드러난다.</div>
+  </div>
+
+  <div class="qpair">
+    <div class="qp-src"><b>자율활동</b>1학년 학급회장 — 학급 규칙 제정을 주도하고 학급 행사를 기획·운영함.</div>
+    <div class="qp a"><span class="qp-l">얕은 질문</span><p class="qp-q">학급회장으로서 학급을 잘 이끌었다고 생각하나요?</p></div>
+    <div class="qp b"><span class="qp-l">날 선 질문</span><p class="qp-q">규칙을 정할 때 반대한 친구가 있었을 텐데 그 의견을 어떻게 처리했는지, 그리고 끝내 반영하지 못한 의견은 무엇이었는지 말해 주세요.</p></div>
+    <div class="qp-why"><b>무엇이 달라졌나</b> — ‘잘 이끌었나요’(자기 평가)를 ‘반대 의견을 어떻게 했나 + 못 반영한 것은 무엇인가’로 바꿨다. 성공담 대신 갈등을 다룬 방식을 묻는 자리가 된다.</div>
+  </div>
+
+  <div class="qpair">
+    <div class="qp-src"><b>진로활동</b>3학년 진로주제탐구 — ‘인공지능과 광고의 결합’을 주제로 탐구하여 발표함.</div>
+    <div class="qp a"><span class="qp-l">얕은 질문</span><p class="qp-q">인공지능과 광고를 주제로 발표했는데, 그 주제에 대해 설명해 주세요.</p></div>
+    <div class="qp b"><span class="qp-l">날 선 질문</span><p class="qp-q">여러 분야 중 하필 광고에 인공지능을 붙여 본 이유는 무엇이고, 탐구하면서 처음 생각과 달라진 점이 있다면 무엇인가요?</p></div>
+    <div class="qp-why"><b>무엇이 달라졌나</b> — ‘설명해 주세요’(내용 요약)를 ‘왜 하필 그 조합인가 + 처음 생각과 달라진 점’으로 바꿨다. 정리해 온 내용이 아니라 탐구 도중에 일어난 변화를 묻는다.</div>
+  </div>
+
+  <div class="qpair">
+    <div class="qp-src"><b>봉사활동</b>2학년 — 교내 분리수거 도우미로 매주 목요일 활동, 총 20시간 이수함.</div>
+    <div class="qp a"><span class="qp-l">얕은 질문</span><p class="qp-q">분리수거 봉사를 하면서 어떤 점이 좋았나요?</p></div>
+    <div class="qp b"><span class="qp-l">날 선 질문</span><p class="qp-q">20시간 동안 가장 안 지켜지던 것은 무엇이었고, 그걸 보고 본인이 실제로 바꾼 행동이 하나 있다면 무엇인가요?</p></div>
+    <div class="qp-why"><b>무엇이 달라졌나</b> — ‘어떤 점이 좋았나요’를 ‘무엇이 안 되고 있었나 + 그래서 내가 바꾼 행동’으로 바꿨다. 봉사는 채운 시간이 아니라 달라진 행동으로 증명된다.</div>
+  </div>
+
+  <div class="qpair">
+    <div class="qp-src"><b>독서</b>2학년 — 『총, 균, 쇠』를 읽고 문명 발달의 조건을 우리 역사와 비교한 감상문을 제출함.</div>
+    <div class="qp a"><span class="qp-l">얕은 질문</span><p class="qp-q">『총, 균, 쇠』는 어떤 내용의 책인가요?</p></div>
+    <div class="qp b"><span class="qp-l">날 선 질문</span><p class="qp-q">저자의 설명 중 우리 역사에는 그대로 적용되지 않는다고 본 부분은 어디였고, 왜 그렇게 판단했나요?</p></div>
+    <div class="qp-why"><b>무엇이 달라졌나</b> — ‘어떤 내용인가요’(줄거리)를 ‘동의하지 않은 지점과 그 근거’로 바꿨다. 줄거리는 안 읽어도 말할 수 있지만 반박 지점은 읽은 사람만 말한다.</div>
+  </div>
+
+  <div class="qpair">
+    <div class="qp-src"><b>교과학습발달상황</b>수학 등급 — 2학년 1학기 3 → 2학년 2학기 5 → 3학년 1학기 3.</div>
+    <div class="qp a"><span class="qp-l">얕은 질문</span><p class="qp-q">2학년 2학기에 수학 성적이 떨어졌는데, 그 뒤에 열심히 공부했나요?</p></div>
+    <div class="qp b"><span class="qp-l">날 선 질문</span><p class="qp-q">5등급으로 떨어졌을 때 원인을 무엇이라고 판단했고, 그 판단에 따라 공부 방법에서 구체적으로 무엇을 바꿨나요?</p></div>
+    <div class="qp-why"><b>무엇이 달라졌나</b> — ‘열심히 했나요’(예·아니오)를 ‘원인을 무엇으로 진단했고 방법의 무엇을 바꿨나’로 바꿨다. 성적 질문은 노력의 양이 아니라 원인을 짚는 능력을 본다.</div>
+  </div>
+
+  <div class="qpair">
+    <div class="qp-src"><b>행동특성 및 종합의견</b>말수는 적으나 맡은 일을 끝까지 해내며, 친구가 어려울 때 먼저 다가가 돕는 모습이 자주 관찰됨.</div>
+    <div class="qp a"><span class="qp-l">얕은 질문</span><p class="qp-q">선생님이 친구들을 잘 돕는다고 써 주셨는데, 실제로 그런 편인가요?</p></div>
+    <div class="qp b"><span class="qp-l">날 선 질문</span><p class="qp-q">선생님이 그렇게 적으신 근거가 될 만한 장면을 하나만 고른다면 언제였고, 그때 왜 굳이 본인이 먼저 나섰나요?</p></div>
+    <div class="qp-why"><b>무엇이 달라졌나</b> — ‘그런 편인가요’(예·아니오)를 ‘그 문장의 근거가 된 장면 하나’로 바꿨다. 남이 써 준 평가는 내가 장면 하나로 갚아야 내 것이 된다.</div>
+  </div>
+
+  <div class="good" style="margin-top:18px">
+    <b>C를 버리지는 않는다.</b> 같은 학생부 줄에서 <b>동사만 바꿔</b> 다시 뽑으면 된다. 지난 시간의 다섯 동사 — 계기 · 과정 · 개념 · 변화 · 연결 — 를 그대로 쓴다.
+  </div>
+</section>
+
+<!-- 04 STAR -->
+<section>
+  <div class="sec-head">
+    <span class="sec-num">04</span>
+    <h2>경험은 네 칸으로 쪼개 검사한다</h2>
+    <span class="sec-note">② 15–30</span>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-key">A</span><h3>지난 시간의 3단 틀은 버리지 않는다</h3><span class="min">4분</span></div>
+    <p>지난 시간에 배운 <b>결론 · 근거 · 의미</b>는 여전히 하나뿐인 뼈대다. 오늘 배울 STAR는 그것을 대체하는 두 번째 틀이 아니라, 가운데 칸인 <b>‘근거’ 하나가 비었는지 보는 점검표</b>다. <em>세 칸으로 말하고, 네 칸으로 검사한다.</em></p>
+
+    <div class="map-wrap" contenteditable="false" style="margin-top:14px">
+      <svg viewBox="0 0 900 372" role="img" aria-label="결론·근거·의미 3단 틀의 가운데 근거 칸이 S 상황, T 과제, A 행동, R 결과 네 칸으로 펼쳐지고, R의 배운 점이 다시 의미 칸으로 이어지는 그림">
+        <g fill="none" stroke="var(--accent)" stroke-width="1.6" opacity="0.55">
+          <path d="M222,188 C360,188 400,119 518,119"/>
+          <path d="M222,188 C360,188 400,165 518,165"/>
+          <path d="M222,188 C360,188 400,211 518,211"/>
+          <path d="M222,188 C360,188 400,257 518,257"/>
+        </g>
+        <path d="M518,267 C380,300 330,322 222,322" fill="none" stroke="var(--warm)" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.85"/>
+
+        <g font-family="IBM Plex Sans KR, Malgun Gothic, sans-serif">
+          <rect x="20" y="25" width="202" height="58" rx="2" fill="var(--surface-2)" stroke="var(--rule-strong)"/>
+          <text x="38" y="50" font-size="16" font-weight="700" fill="var(--ink)">1  결론</text>
+          <text x="38" y="71" font-size="13.5" fill="var(--ink-2)">묻는 것에 대한 답 한 문장</text>
+
+          <rect x="20" y="99" width="202" height="178" rx="2" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+          <text x="38" y="130" font-size="16" font-weight="700" fill="var(--accent-ink)">2  근거</text>
+          <text x="38" y="152" font-size="13.5" fill="var(--ink-2)">구체적인 경험 하나</text>
+          <text x="38" y="190" font-size="13" fill="var(--ink-3)">— 이 한 칸이 비었는지</text>
+          <text x="38" y="210" font-size="13" fill="var(--ink-3)">네 칸으로 검사한다</text>
+
+          <rect x="20" y="293" width="202" height="58" rx="2" fill="var(--surface-2)" stroke="var(--rule-strong)"/>
+          <text x="38" y="318" font-size="16" font-weight="700" fill="var(--ink)">3  의미</text>
+          <text x="38" y="339" font-size="13.5" fill="var(--ink-2)">배운 점과 전공의 연결</text>
+
+          <rect x="518" y="99" width="356" height="40" rx="2" fill="var(--surface)" stroke="var(--accent)" stroke-width="1.6"/>
+          <text x="538" y="125" font-size="15" font-weight="700" fill="var(--accent)">S</text>
+          <text x="566" y="125" font-size="14" fill="var(--ink)">상황 — 언제, 어떤 일이 있었나</text>
+
+          <rect x="518" y="145" width="356" height="40" rx="2" fill="var(--surface)" stroke="var(--accent)" stroke-width="1.6"/>
+          <text x="538" y="171" font-size="15" font-weight="700" fill="var(--accent)">T</text>
+          <text x="566" y="171" font-size="14" fill="var(--ink)">과제 — 무엇이 어려웠고 내 역할은</text>
+
+          <rect x="518" y="191" width="356" height="40" rx="2" fill="var(--surface)" stroke="var(--accent)" stroke-width="1.6"/>
+          <text x="538" y="217" font-size="15" font-weight="700" fill="var(--accent)">A</text>
+          <text x="566" y="217" font-size="14" fill="var(--ink)">행동 — 내가 무엇을 어떻게 했나</text>
+
+          <rect x="518" y="237" width="356" height="40" rx="2" fill="var(--surface)" stroke="var(--accent)" stroke-width="1.6"/>
+          <text x="538" y="263" font-size="15" font-weight="700" fill="var(--accent)">R</text>
+          <text x="566" y="263" font-size="14" fill="var(--ink)">결과 — 달라진 것 / 배운 것</text>
+
+          <text x="300" y="348" font-size="13" fill="var(--warm)">R의 빗금 뒤 ‘배운 것’이 그대로 3 의미가 되어 마지막 문장으로 나간다</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="good" style="margin-top:14px">
+      <b>R 칸은 빗금으로 둘로 나눠 쓴다.</b> 앞은 <b>달라진 것</b>, 뒤는 <b>배운 것</b>. 빗금 뒤가 그대로 3번 의미가 되어 답변의 마지막 문장으로 나간다. 그래서 조각은 다섯 개지만 말하는 순서는 여전히 셋이다.
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-key">B</span><h3>네 칸이 각각 묻는 것</h3><span class="min">4분</span></div>
+    <div class="starcards">
+      <article class="sc">
+        <span class="sc-l">S</span>
+        <h4>상황</h4>
+        <p>그 일이 벌어진 자리. 언제, 어디서, 무슨 일이 있었는지.</p>
+        <div class="ex">“축제 안내문, 아무도 안 읽음”</div>
+      </article>
+      <article class="sc">
+        <span class="sc-l">T</span>
+        <h4>과제</h4>
+        <p>그 상황에서 <b>무엇이 어려웠는지</b>, 그중 <b>내 몫이 무엇이었는지</b>.</p>
+        <div class="ex">“글 대신 무엇으로 바꿀까”</div>
+      </article>
+      <article class="sc">
+        <span class="sc-l">A</span>
+        <h4>행동</h4>
+        <p>내가 실제로 한 일. 다른 선택지도 있었는데 왜 이것을 골랐는지.</p>
+        <div class="ex">“이미지 다섯 장, 핵심만 남김”</div>
+      </article>
+      <article class="sc">
+        <span class="sc-l">R</span>
+        <h4>결과</h4>
+        <p>무엇이 달라졌는지 <b>/</b> 그 일에서 무엇을 배웠는지.</p>
+        <div class="ex">“신청 두 배 / 형식이 메시지를 정함”</div>
+      </article>
+    </div>
+    <div class="warn" style="margin-top:14px">
+      <b>가장 많이 비는 칸은 A다.</b> 학생들은 상황(S)과 결과(R)는 곧잘 말하면서 그 사이에 <b>자기가 한 일</b>을 넣지 않는다. “활동을 했고 많은 것을 배웠습니다”로 건너뛴다. 면접관이 확인하려는 것은 정확히 그 빈칸이다. A칸이 비면, 자기 경험인데도 남의 활동을 전해 듣고 말하는 것처럼 들린다.
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-key">C</span><h3>지난 시간 말문이 막혔던 그 답변을 다시</h3><span class="min">7분</span></div>
+    <p style="color:var(--ink-2);font-size:15px"><b>질문</b> — “동아리에서 카드뉴스를 제작했다고 되어 있네요. 그 활동을 소개해 주세요.”</p>
+
+    <div class="ba">
+      <div class="ba-col bad">
+        <div class="ba-h">지난 시간에 나왔던 답변</div>
+        <div class="ba-t">“네, 저는 2학년 미디어문화탐구반에서 지역 축제를 소재로 카드뉴스를 제작하여 학급에 게시하였고, 이를 통해 정보 전달의 중요성을 배웠습니다.”</div>
+        <div class="ba-why">학생부에 적힌 문장을 그대로 되읽었을 뿐이다. <b>A칸이 통째로 비어 있다.</b> 그래서 “친구들 반응이 어땠나요?”라는 두 번째 질문에서 멈췄다.</div>
+      </div>
+      <div class="ba-col ok">
+        <div class="ba-h">같은 경험, 네 칸을 채운 뒤</div>
+        <div class="ba-t">“제가 만든 것은 지역 축제 안내 카드뉴스입니다. 게시판에 붙은 안내문을 아무도 읽지 않는 것을 보고, 내용이 아니라 형식이 문제라고 생각했습니다. 그래서 일정과 장소만 남기고 나머지를 덜어내 이미지 다섯 장으로 다시 만들었습니다. 붙인 지 사흘 만에 참가 신청이 두 배가 되었습니다. 메시지는 내용만이 아니라 형식이 함께 정한다는 것을 그때 알았고, 그래서 미디어를 공부하고 싶어졌습니다.”</div>
+        <div class="ba-why">같은 활동이고 없던 일을 지어내지도 않았다. <b>달라진 것은 하나, 빈칸을 채웠다는 것뿐이다.</b></div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:24px">그런데 손에 들고 있어야 할 것은 오른쪽 문장이 아니다</h3>
+    <p>완성된 문장을 외우면 지난 시간의 실패가 그대로 반복된다. 실제로 적어 둘 것은 <b>이 다섯 줄</b>이다.</p>
+    <div class="outline" style="margin-top:8px">
+      <div class="ol head">결</div><div class="head-v">지역 축제 안내 카드뉴스</div>
+      <div class="ol">S</div><div>축제 안내문, 아무도 안 읽음</div>
+      <div class="ol">T</div><div>글 대신 무엇으로 바꿀까</div>
+      <div class="ol">A</div><div>이미지 다섯 장, 핵심만 남김</div>
+      <div class="ol">R</div><div>신청 두 배 <b>/</b> 형식이 메시지를 정함</div>
+    </div>
+    <div class="warn" style="margin-top:14px">
+      <b>맨 위 한 줄은 언제나 결론이다.</b> S부터 쓰기 시작하면 “축제 안내문이 안 읽혀서요…” 하고 상황부터 말하게 된다. 지난 시간 체크리스트에서 여러분이 가장 많이 ✗를 받은 칸이 정확히 그 줄이다. 개요는 네 줄이 아니라 <b>결론 한 줄 + 네 칸</b>이다.
+    </div>
+    <div class="good" style="margin-top:12px">
+      <b>한 칸에 열 자 안팎.</b> 이 다섯 줄만 머리에 있으면 문장은 그 자리에서 만들어진다. 오늘 만들 것이 바로 이것이고, 다음 시간에는 이 종이를 덮고 말한다.
+    </div>
+  </div>
+</section>
+
+<!-- 05 계열별 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-num">05</span>
+    <h2>계열별로 하나씩</h2>
+    <span class="sec-note">② · ③ 참고</span>
+  </div>
+  <p style="margin-bottom:16px">자기 계열을 눌러 본다. 학생부 한 줄이 어떻게 질문이 되고, 나쁜 답변이 어디서 비며, 다섯 줄이 어떻게 채워지는지가 한 장에 있다.</p>
+
+  <div data-tabgroup>
+    <div class="tabs noprint" contenteditable="false">
+      <button class="tab cur" data-tab="tk1">인문 · 어문</button>
+      <button class="tab" data-tab="tk2">사회 · 상경</button>
+      <button class="tab" data-tab="tk3">자연 · 공학</button>
+      <button class="tab" data-tab="tk4">교육 · 사범</button>
+      <button class="tab" data-tab="tk5">의약 · 보건</button>
+    </div>
+
+    <div class="trackpanel" id="tk1">
+      <div class="block">
+        <div class="block-head"><span class="block-key">인문 · 어문</span><h3>국어국문학과 지망 · 세부능력 및 특기사항</h3></div>
+        <div class="qp-src" style="border:1px solid var(--rule)"><b>학생부</b>‘우리 지역 말 탐구’ 활동에서 김해 지역 70대 화자 3인을 면담하여 경남 방언 어휘 24개를 수집하고, ‘정구지(부추)’, ‘단디(야무지게)’ 등의 표준어 대응형과 사용 맥락을 정리한 어휘 카드집을 제작해 학급에 배포함.</div>
+        <p style="margin-top:14px;color:var(--ink-2);font-size:15px"><b>질문</b> — 방언 어휘 24개를 수집해 어휘 카드집을 만들었다고 되어 있습니다. 그 활동에서 본인이 가장 공을 들인 부분은 무엇이었고, 왜 거기에 공을 들였는지 말해 보세요.</p>
+        <div class="ba">
+          <div class="ba-col bad">
+            <div class="ba-h">흔한 답변</div>
+            <div class="ba-t">“저는 평소에 우리말에 관심이 많아서 방언 탐구 활동에 참여하게 되었습니다. 어르신들을 직접 만나 뵙고 이야기를 나누다 보니 방언에는 표준어가 담지 못하는 정서가 담겨 있다는 것을 느낄 수 있었던 것 같습니다. 조원들과 함께 열심히 자료를 모으고 카드도 만들면서 많은 것을 배웠고, 우리 지역의 언어를 지켜야겠다는 생각을 하게 되었습니다.”</div>
+            <div class="ba-why">‘열심히’, ‘많은 것을 배웠다’만 남고, 24개라는 숫자 뒤에서 이 학생이 손으로 무엇을 했는지가 한 조각도 드러나지 않는다.</div>
+          </div>
+          <div class="ba-col ok">
+            <div class="ba-h">다섯 줄을 채운 뒤</div>
+            <div class="ba-t">“제가 가장 공을 들인 부분은 어휘의 뜻을 사전에서 베끼지 않고 실제 쓰임에서 다시 확인한 일입니다. 처음 수집한 24개를 사전과 대조해 보니, ‘단디’처럼 뜻풀이는 ‘단단히’인데 실제로는 ‘조심해서 가라’는 당부로 쓰이는 어휘가 여섯 개 있었습니다. 그래서 그 여섯 개만 따로 뽑아 세 분을 다시 찾아뵙고, 어휘 하나당 실제로 쓰신 문장을 두 개씩 받아 적었습니다. 예문을 나란히 놓으니 같은 말도 듣는 사람에 따라 뜻이 갈려서, 카드에 ‘뜻’ 옆에 ‘쓰는 상황’ 칸을 새로 만들었습니다. 단어의 뜻은 사전보다 맥락이 먼저 정한다는 것을 알게 되어, 국어국문학과에서 국어학을 공부하고 싶다는 생각이 분명해졌습니다.”</div>
+          </div>
+        </div>
+        <div class="outline" style="margin-top:14px">
+          <div class="ol head">결</div><div class="head-v">사전 아닌 실제 쓰임으로 확인</div>
+          <div class="ol">S</div><div>김해 방언 어휘 24개 수집</div>
+          <div class="ol">T</div><div>사전 뜻과 실제 쓰임 불일치</div>
+          <div class="ol">A</div><div>6개 재면담, 예문 2개씩 확보</div>
+          <div class="ol">R</div><div>‘쓰는 상황’ 칸 신설 <b>/</b> 맥락이 뜻을 정한다</div>
+        </div>
+        <div class="mini" style="margin-top:14px">
+          <h4>이어질 꼬리질문</h4>
+          <ul class="tight">
+            <li>‘단디’ 말고, 사전 뜻과 실제 쓰임이 갈린 어휘를 하나 더 들어서 받아 적은 예문 두 개가 어떻게 달랐는지 말해 보세요.</li>
+            <li>화자가 세 분뿐이고 모두 70대였는데, 그 자료로 ‘김해 지역 방언’이라고 말하기에는 부족하지 않았습니까? 다시 한다면 어디를 고치겠습니까?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="trackpanel off" id="tk2">
+      <div class="block">
+        <div class="block-head"><span class="block-key">사회 · 상경</span><h3>경제·경영 지망 · 동아리활동</h3></div>
+        <div class="qp-src" style="border:1px solid var(--rule)"><b>학생부</b>경제동아리 ‘이코노미아’ 부원으로 교내 나눔장터 기획에 참여함. 1·2학년 142명을 대상으로 한 사전 수요조사 설문을 분석하여 품목을 세 개 가격대로 나눈 가격표를 제작하였고, 행사 당일 판매 기록 87건을 정리해 잔여 물품 처리 방안을 담은 결산 보고서를 작성함.</div>
+        <p style="margin-top:14px;color:var(--ink-2);font-size:15px"><b>질문</b> — 동아리에서 교내 나눔장터를 기획했다고 되어 있습니다. 본인이 맡은 역할이 무엇이었고, 그 과정에서 어떤 어려움이 있었는지 말해 주세요.</p>
+        <div class="ba">
+          <div class="ba-col bad">
+            <div class="ba-h">흔한 답변</div>
+            <div class="ba-t">“네, 저희 동아리에서는 친구들이 안 쓰는 물건을 서로 나누는 장터를 열었습니다. 준비하면서 회의도 많이 했고 의견 차이로 힘든 부분도 있었지만, 부원들이 다들 열심히 해서 잘 마무리된 것 같습니다. 저도 맡은 일을 성실히 하면서 협력의 중요성과 경제의 원리를 많이 배울 수 있었던 것 같습니다.”</div>
+            <div class="ba-why">행사 소개와 소감만 있고 ‘내가 무엇을 했는가’가 한 번도 나오지 않아, 자기 경험인데도 남의 활동을 전해 듣고 말하는 것처럼 들린다.</div>
+          </div>
+          <div class="ba-col ok">
+            <div class="ba-h">다섯 줄을 채운 뒤</div>
+            <div class="ba-t">“제가 맡은 일은 나눔장터의 가격 기준을 정하는 것이었습니다. 처음에는 값을 부르는 사람마다 기준이 달라서, 같은 교복 셔츠가 오백 원이 되기도 하고 이천 원이 되기도 했습니다. 그래서 저는 1·2학년 142명에게 품목별로 얼마면 사겠는지를 묻는 설문을 돌렸고, 응답이 가장 많이 몰린 지점을 기준으로 오백 원, 천 원, 이천 원 세 가격대로 나눈 가격표를 만들었습니다. 행사 당일에는 판매 87건을 표에 그때그때 적어 두었다가, 안 팔린 물건이 어느 가격대에 몰렸는지를 결산 보고서에 정리했습니다. 가격은 파는 사람의 생각이 아니라 사는 사람의 기준으로 정해진다는 것을 배웠고, 사람들의 선택을 자료로 읽어내는 경제학을 공부하고 싶어졌습니다.”</div>
+          </div>
+        </div>
+        <div class="outline" style="margin-top:14px">
+          <div class="ol head">결</div><div class="head-v">가격 기준을 정하는 일을 맡음</div>
+          <div class="ol">S</div><div>첫 나눔장터, 가격 제각각</div>
+          <div class="ol">T</div><div>모두 납득할 가격 기준</div>
+          <div class="ol">A</div><div>142명 설문 → 3단계 가격표</div>
+          <div class="ol">R</div><div>87건 판매·결산 <b>/</b> 가격은 사는 쪽이 정한다</div>
+        </div>
+        <div class="mini" style="margin-top:14px">
+          <h4>이어질 꼬리질문</h4>
+          <ul class="tight">
+            <li>설문 결과와 실제 판매 기록이 어긋난 품목도 있었나요? 있었다면 어떤 품목이었고, 왜 그랬다고 보나요?</li>
+            <li>142명은 전교생의 일부인데, 그 응답만으로 가격을 정한 것이 적절했다고 생각하나요? 다시 한다면 무엇을 바꾸겠습니까?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="trackpanel off" id="tk3">
+      <div class="block">
+        <div class="block-head"><span class="block-key">자연 · 공학</span><h3>물리·기계공학 지망 · 세부능력 및 특기사항</h3></div>
+        <div class="qp-src" style="border:1px solid var(--rule)"><b>학생부</b>물리학Ⅰ ‘역학과 에너지’ 심화 탐구에서 커피 필터를 1장부터 5장까지 겹쳐 떨어뜨리며 낙하 장면을 240fps로 촬영하고 속도-시간 그래프를 작성하여 종단속도를 측정하였으며, 공기저항력이 속도의 제곱에 비례하는 모형이 측정값을 더 잘 설명함을 확인하고 보고서로 제출함.</div>
+        <p style="margin-top:14px;color:var(--ink-2);font-size:15px"><b>질문</b> — 학생부에 종단속도를 측정했다고 되어 있는데, 종단속도가 무엇인지 설명하고 필터를 겹쳐 무겁게 했을 때 종단속도가 어떻게 변했는지 말해 보세요.</p>
+        <div class="ba">
+          <div class="ba-col bad">
+            <div class="ba-h">흔한 답변</div>
+            <div class="ba-t">“저는 물리 시간에 커피 필터를 떨어뜨리는 실험을 했는데, 공기 저항 때문에 속도가 더 이상 안 빨라지는 것이 종단속도인 것 같습니다. 조원들과 여러 번 측정했지만 값이 잘 안 맞아서 힘들었는데, 그래도 포기하지 않고 열심히 해서 결과를 얻을 수 있었습니다. 이 실험을 통해 협력의 중요성과 물리에 대한 흥미를 많이 배웠고, 앞으로도 탐구하는 자세를 갖고 싶다고 생각했습니다.”</div>
+            <div class="ba-why">질문이 요구한 <b>개념 설명</b>을 한 문장도 하지 못한 채 “협력”과 “흥미”라는 감상으로 넘어갔다. 세특에 적힌 용어는 반드시 설명할 수 있어야 한다.</div>
+          </div>
+          <div class="ba-col ok">
+            <div class="ba-h">다섯 줄을 채운 뒤</div>
+            <div class="ba-t">“종단속도는 중력과 공기저항이 같아져 알짜힘이 0이 되면서 속도가 더 이상 늘지 않는 상태의 속도입니다. 물리학Ⅰ 탐구에서 커피 필터를 한 장부터 다섯 장까지 겹쳐 떨어뜨리며 240프레임으로 촬영하고, 프레임마다 위치를 읽어 속도-시간 그래프를 직접 그렸습니다. 그래프가 수평해지는 구간의 값을 종단속도로 잡았더니 장수가, 즉 질량이 커질수록 종단속도도 커졌습니다. 다만 저항이 속도에 비례한다면 종단속도가 질량에 정비례해야 하는데 측정값은 그보다 천천히 늘어서, 속도의 제곱에 비례하는 모형이 더 잘 맞는다고 판단했습니다. 공식을 외우는 것과 데이터가 어느 모형을 고르는지 보는 것이 다르다는 걸 배워, 기계공학에서 유체 저항을 더 공부하고 싶습니다.”</div>
+          </div>
+        </div>
+        <div class="outline" style="margin-top:14px">
+          <div class="ol head">결</div><div class="head-v">알짜힘 0에서 더 안 빨라지는 속도</div>
+          <div class="ol">S</div><div>물리Ⅰ 커피필터 낙하 탐구</div>
+          <div class="ol">T</div><div>종단속도 측정·저항 모형 비교</div>
+          <div class="ol">A</div><div>240fps 촬영, 1~5장 v-t 그래프</div>
+          <div class="ol">R</div><div>질량↑ 종단속도↑ <b>/</b> 데이터가 모형을 고른다</div>
+        </div>
+        <div class="mini" style="margin-top:14px">
+          <h4>이어질 꼬리질문</h4>
+          <ul class="tight">
+            <li>속도-시간 그래프에서 ‘수평해지는 구간’은 어떤 기준으로 골랐나요? 눈으로 정한 건가요, 정해 둔 기준이 있었나요?</li>
+            <li>다섯 번의 측정만으로 속도의 제곱에 비례하는 모형이 더 맞다고 결론 내리기에는 근거가 약하다고 볼 수도 있는데, 그 점은 어떻게 생각하나요?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="trackpanel off" id="tk4">
+      <div class="block">
+        <div class="block-head"><span class="block-key">교육 · 사범</span><h3>국어교육과 지망 · 진로활동</h3></div>
+        <div class="qp-src" style="border:1px solid var(--rule)"><b>학생부</b>교내 또래멘토링 프로그램 ‘함께성장’에 국어 멘토로 참여하여 1학년 멘티 2명을 주 1회 지도하였고, 멘티가 반복하여 틀린 ‘높임 표현’ 문항 12개를 유형별로 분류한 오답 노트를 직접 제작해 제공함.</div>
+        <p style="margin-top:14px;color:var(--ink-2);font-size:15px"><b>질문</b> — 또래멘토링에서 멘티를 위해 오답 노트를 직접 만들었다고 되어 있는데, 어떤 점을 고려해서 만들었고 멘티에게 어떤 변화가 있었나요?</p>
+        <div class="ba">
+          <div class="ba-col bad">
+            <div class="ba-h">흔한 답변</div>
+            <div class="ba-t">“네, 저는 또래멘토링을 하면서 멘티에게 정말 도움이 되고 싶다는 생각을 많이 했던 것 같습니다. 멘티가 국어를 어려워해서 저도 같이 고민하면서 최대한 열심히 준비해 알려주려고 노력했고, 그 과정에서 소통의 중요성과 배려심을 배울 수 있었습니다. 멘티도 점점 나아지는 것 같아서 가르치는 일이 저에게 잘 맞는다고 느꼈던 값진 경험이었던 것 같습니다.”</div>
+            <div class="ba-why">노트를 “어떻게” 만들었는지 물었는데 마음가짐과 감상만 답해서, <b>멘토링을 해 본 학생 누구에게나 그대로 붙는 답변</b>이 되었다.</div>
+          </div>
+          <div class="ba-col ok">
+            <div class="ba-h">다섯 줄을 채운 뒤</div>
+            <div class="ba-t">“제가 가장 신경 쓴 것은 다시 설명해 주는 대신 왜 틀리는지부터 찾는 일이었습니다. 멘티가 높임 표현 문제를 계속 틀려서 한 달 동안 틀린 12문제를 모아 보니, 주체·객체·상대 높임을 구분하지 못해서가 아니라 문장에서 주어를 잘못 잡는 데서 대부분 어긋난다는 걸 알았습니다. 그래서 노트를 세 유형으로 나누고, 유형마다 멘티가 실제로 쓴 문장을 예문으로 넣어 주어에 동그라미부터 치게 했습니다. 한 달 뒤 멘티가 ‘이건 주어 찾는 문제네’라고 먼저 말했을 때, 가르치는 일은 잘 설명하는 게 아니라 어디서 막혔는지 짚어 주는 일이라는 걸 배웠습니다. 그래서 국어교육과에 가서 학생의 오개념을 진단하는 방법을 더 공부하고 싶습니다.”</div>
+          </div>
+        </div>
+        <div class="outline" style="margin-top:14px">
+          <div class="ol head">결</div><div class="head-v">설명 대신 원인부터 찾은 일</div>
+          <div class="ol">S</div><div>멘티가 높임 표현 반복 오답</div>
+          <div class="ol">T</div><div>설명 반복 대신 원인 찾기</div>
+          <div class="ol">A</div><div>오답 12개 유형별 분류 노트</div>
+          <div class="ol">R</div><div>멘티가 먼저 유형을 말함 <b>/</b> 진단이 먼저다</div>
+        </div>
+        <div class="mini" style="margin-top:14px">
+          <h4>이어질 꼬리질문</h4>
+          <ul class="tight">
+            <li>오답을 세 유형으로 나눴다고 했는데, 주어를 잘못 잡는 유형 말고 나머지 두 유형은 무엇이었나요?</li>
+            <li>그 방법이 통하지 않았거나 멘티가 끝까지 어려워한 부분은 없었나요? 있었다면 이유가 무엇이라고 생각하나요?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="trackpanel off" id="tk5">
+      <div class="block">
+        <div class="block-head"><span class="block-key">의약 · 보건</span><h3>간호학과 지망 · 행동특성 및 종합의견</h3></div>
+        <div class="qp-src" style="border:1px solid var(--rule)"><b>학생부</b>매월 둘째 주 토요일 노인전문요양원에서 1년간 32시간 봉사하며 어르신 식사 보조와 말벗 활동을 꾸준히 수행하였고, 의사소통이 어려운 어르신을 위해 자주 쓰는 표현을 수첩에 정리해 익히는 등 스스로 방법을 찾아 실천하는 모습을 보임.</div>
+        <p style="margin-top:14px;color:var(--ink-2);font-size:15px"><b>질문</b> — 봉사활동을 하면서 가장 힘들었던 순간은 언제였고, 그때 본인은 어떻게 행동했나요?</p>
+        <div class="ba">
+          <div class="ba-col bad">
+            <div class="ba-h">흔한 답변</div>
+            <div class="ba-t">“저는 1년 동안 요양원에서 봉사활동을 하며 어르신들을 도와드렸습니다. 처음에는 조금 힘들었지만 계속하다 보니 어르신들의 마음을 이해하게 된 것 같고, 배려심과 책임감을 많이 배울 수 있었습니다. 이런 경험이 나중에 간호사가 되는 데 큰 도움이 될 것 같습니다.”</div>
+            <div class="ba-why">“힘들었다”와 “배웠다”만 있고 무엇이 힘들었는지, 그 순간 자기가 무엇을 했는지가 한 줄도 없어서 <b>누구의 봉사인지 알 수 없다.</b></div>
+          </div>
+          <div class="ba-col ok">
+            <div class="ba-h">다섯 줄을 채운 뒤</div>
+            <div class="ba-t">“가장 힘들었던 순간은 제 말이 어르신께 닿지 않는다고 느꼈을 때였습니다. 봉사 두 달째에 만난 어르신은 발음이 잘 들리지 않아, 제가 세 번쯤 되묻자 말씀을 멈추셨습니다. 제가 어르신의 말을 막은 것 같아, 그다음부터는 요양보호사 선생님께 여쭤 어르신이 자주 쓰시는 표현을 수첩에 적어 두었고, 잘 들리지 않을 때는 되묻는 대신 제가 들은 대로 천천히 다시 말씀드려 맞는지 확인했습니다. 그러자 어르신이 고개를 끄덕이거나 손으로 고쳐 주셨고, 몇 주 뒤에는 먼저 제 이름을 불러 주셨습니다. 돌봄은 무엇을 해 드리는 일이기 전에 상대의 말을 끝까지 듣는 일이라는 걸 배웠고, 간호학과에 가서도 환자의 말을 놓치지 않는 사람이 되고 싶습니다.”</div>
+          </div>
+        </div>
+        <div class="outline" style="margin-top:14px">
+          <div class="ol head">결</div><div class="head-v">말이 닿지 않는다고 느꼈을 때</div>
+          <div class="ol">S</div><div>요양원 말벗 봉사, 소통 막힘</div>
+          <div class="ol">T</div><div>되묻지 않고 대화 이어가기</div>
+          <div class="ol">A</div><div>표현 수첩 정리, 들은 대로 되확인</div>
+          <div class="ol">R</div><div>먼저 이름 불러 주심 <b>/</b> 듣는 것도 돌봄이다</div>
+        </div>
+        <div class="mini" style="margin-top:14px">
+          <h4>이어질 꼬리질문</h4>
+          <ul class="tight">
+            <li>수첩에 적었다는 표현은 구체적으로 어떤 말들이었고, 그게 실제로 도움이 된 순간은 언제였나요?</li>
+            <li>그 방법이 통하지 않은 어르신도 있었을 텐데, 그럴 때는 어떻게 했나요?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="good" style="margin-top:16px">
+    <b>다섯 장에서 같은 자리가 빈다.</b> 나쁜 답변 다섯 개를 나란히 놓으면 전부 <b>A칸</b>이 없다. 계열이 달라도 무너지는 지점은 하나다.
+  </div>
+</section>
+
+<!-- 06 자기소개 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-num">06</span>
+    <h2>목소리 깨우기 · 30초 자기소개 확정</h2>
+    <span class="sec-note">④ 50–60</span>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-key">A</span><h3>전원 기립, 같은 문장을 세 번</h3><span class="min">3분</span></div>
+    <p>긴장하면 예외 없이 <b>빨라지고, 작아지고, 말끝이 흐려진다.</b> 연습으로 잡히는 것은 그중 속도와 어미 둘뿐이니 그 둘만 한다. 다 함께 서서 소리 내어 읽는다.</p>
+    <p style="font-family:var(--f-display);font-size:17px;margin:14px 0 0;border-left:2px solid var(--accent);padding-left:14px">“붙인 지 사흘 만에 참가 신청이 두 배가 되었습니다.”</p>
+    <div class="mini" style="margin-top:14px">
+      <h4>세 번 읽는 방법</h4>
+      <ol>
+        <li><b>평소 속도로</b> 한 번.</li>
+        <li><b>한 뼘 느리게</b> 한 번. 스스로 답답할 만큼 느린 것이 듣는 쪽에는 알맞다.</li>
+        <li><b>어미를 끝까지 눌러서</b> 한 번. “—되었습니다”의 마지막 두 글자가 살아 있어야 한다.</li>
+      </ol>
+    </div>
+    <div class="tnote" hidden>
+      <b>진행</b> — 반드시 <b>전원 기립 합창</b>으로. 서로 다 아는 사이인 교실에서 개인 지명 드릴을 하면 아무도 먼저 소리를 내지 않고 어색한 침묵으로 3분이 날아간다. 개인에게 시키는 것은 짝 앞에서만, 전체 앞에서는 끝까지 시키지 않는다.
+      <div class="say">지난 시간엔 목소리를 읽었고, 오늘은 냅니다.</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-key">B</span><h3>지난 시간 자기소개를 고쳐 쓴다</h3><span class="min">3분</span></div>
+    <p>새로 쓰는 것이 아니다. 1차시에 했던 그 소개에서 <b>첫 문장을 결론으로 바꾸고</b>, 오늘 만든 개요 중 가장 강한 것을 <b>2번 근거 칸에 옮겨 붙이는</b> 일이다.</p>
+
+    <div class="frame" style="margin-top:14px">
+      <div class="fh"></div><div class="fh">이렇게 채운다</div><div class="fh">예시</div>
+      <div class="fl">1 결론</div>
+      <div class="fr">나를 한 문장으로. 성격 형용사가 아니라 <b>무엇을 해 온 사람인지</b>로.</div>
+      <div class="fx-ex">“저는 전하고 싶은 말이 있으면 형식부터 다시 만들어 보는 학생입니다.”</div>
+      <div class="fl">2 근거</div>
+      <div class="fr">오늘 만든 개요 카드 중 <b>가장 강한 것 하나</b>를 그대로 가져온다.</div>
+      <div class="fx-ex">“읽히지 않던 축제 안내문을 이미지 다섯 장으로 바꿔 신청을 두 배로 늘린 일이 있습니다.”</div>
+      <div class="fl">3 의미</div>
+      <div class="fr">그 경험이 지원과 어떻게 이어지는지 <b>한 문장</b>. 개요 R칸의 빗금 뒤를 그대로 쓴다.</div>
+      <div class="fx-ex">“그래서 메시지가 전달되는 방식을 공부하고 싶어 이 전공에 지원했습니다.”</div>
+    </div>
+
+    <div class="warn" style="margin-top:16px">
+      <b>30초에 넣지 않는 것.</b> 출신 중학교, 가족 관계, 취미, 좌우명, MBTI. 넣는 순간 경험 한 가지가 밀려난다. 30초는 200자 안팎이고, 경험 하나를 넣으면 그것으로 꽉 찬다.
+    </div>
+    <div class="tnote" hidden>
+      <b>진행</b> — “첫 문장을 결론으로 옮기기” 하나만 시킨다. 그것만으로 3분이 찬다. 백지에서 쓰게 하면 절대 3분에 끝나지 않는다.
+      <div class="say">지난 시간 자기소개에는 근거가 없었습니다. 오늘은 근거를 먼저 만들어 뒀으니 그중 하나를 끼워 넣기만 하면 됩니다.</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-head"><span class="block-key">C</span><h3>짝에게 30초, 그리고 채점</h3><span class="min">4분</span></div>
+    <p>지난 시간과 <b>같은 다섯 항목</b>으로 채점한다. 새 표가 아니라 그 표다.</p>
+
+    <div class="btn-row noprint" style="margin-top:16px;margin-bottom:0" contenteditable="false">
+      <button class="btn" data-toggle="selfcheck" aria-expanded="false" aria-controls="selfcheck" data-show="지난 시간 체크리스트 열기" data-hide="체크리스트 감추기">지난 시간 체크리스트 열기</button>
+      <span class="btn-hint">지난 시간 점수는 짝의 활동지에 있습니다. 기억나는 대로 왼쪽 칸에 적습니다.</span>
+    </div>
+
+    <div id="selfcheck" hidden style="margin-top:16px">
+      <div class="tbl-wrap">
+        <table class="check">
+          <thead><tr><th>#</th><th>확인할 것</th><th>지난 시간</th><th>오늘</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><b>첫 문장에 결론이 있었다.</b> — 듣자마자 무슨 이야기인지 알 수 있었는가</td><td>○ △ ✗</td><td>○ △ ✗</td></tr>
+            <tr><td>2</td><td><b>물은 것에 답했다.</b> — 동문서답이 아니었는가</td><td>○ △ ✗</td><td>○ △ ✗</td></tr>
+            <tr><td>3</td><td><b>구체적인 경험이 하나 이상 있었다.</b> — 언제 무엇을 했다는 이야기가 나왔는가</td><td>○ △ ✗</td><td>○ △ ✗</td></tr>
+            <tr><td>4</td><td><b>어미를 흐리지 않고 끝까지 맺었다.</b> — “~같아요”로 끝나지 않았는가</td><td>○ △ ✗</td><td>○ △ ✗</td></tr>
+            <tr><td>5</td><td><b>시선·자세·표정이 흔들리지 않았다.</b></td><td>○ △ ✗</td><td>○ △ ✗</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="good" style="margin-top:14px">
+        지난 시간에는 대부분 <b>1번</b>과 <b>3번</b>이 ✗였다. 오늘 그 두 칸이 ○로 바뀌었다면, 이 수업은 여기서 이미 목적을 이룬 것이다.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 개요만 보고 말하기 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-num">07</span>
+    <h2>개요만 보고 말하기</h2>
+    <span class="sec-note">⑥ 72–85</span>
+  </div>
+
+  <p style="margin-bottom:18px">완성 문장은 덮는다. 다섯 줄만 보면서 짝에게 말한다. 같은 개요로 <b>두 번</b> 말하는 것이 이 훈련의 전부다.</p>
+
+  <div class="grid2">
+    <div class="mini">
+      <h4>1회차 — 그냥 간다</h4>
+      <ul class="tight">
+        <li>개요를 보며 말한다. 더듬어도 된다. <b>끝까지</b> 간다.</li>
+        <li>듣는 쪽은 다섯 칸 중 <b>빠진 칸</b>만 말해 준다. “A가 없었어”, “R이 뭉뚱그려졌어”.</li>
+        <li>잘했다 못했다는 말하지 않는다. 채점이 아니라 점검이다.</li>
+      </ul>
+    </div>
+    <div class="mini">
+      <h4>2회차 — 불시에 하나 더</h4>
+      <ul class="tight">
+        <li>같은 개요로 다시 말한다. <b>문장은 1회차와 달라져야 정상이다.</b></li>
+        <li>듣는 쪽은 개요에 <b>없는</b> 질문을 하나 던진다.</li>
+        <li>말하는 쪽은 지난 시간 외운 <b>위기 대응 세 문장</b> 중 하나로 받은 뒤 이어 간다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mini" style="margin-top:14px">
+    <h4>받을 때 쓰는 세 문장 — 지난 시간 그대로</h4>
+    <ol>
+      <li>못 들었을 때 — <b>“죄송합니다, 다시 한 번 여쭤봐도 되겠습니까?”</b></li>
+      <li>머리가 하얘졌을 때 — <b>“죄송합니다, 잠시 생각할 시간을 주시겠습니까?”</b></li>
+      <li>모를 때 — <b>“잘 모르겠습니다.”</b> 말꼬리를 흐리지 말고 분명하게.</li>
+    </ol>
+  </div>
+
+  <div class="warn" style="margin-top:16px">
+    <b>1회차와 2회차가 토씨까지 같았다면, 그것은 개요가 아니라 원고다.</b> 그 학생은 개요를 절반으로 줄여야 한다. 한 칸이 열 자를 넘으면 이미 문장이다.
+  </div>
+
+  <div class="tnote" hidden>
+    <b>진행</b> — A 1회차 → B 1회차 → 피드백 → A 2회차 → B 2회차. 각 40초, 피드백 30초. 화면 타이머로 돌린다.<br>
+    <b>2회차의 불시 질문이 핵심이다.</b> 3차시에 실제로 사고가 나는 지점을 여기서 한 번 통과시키는 것이다.
+    <div class="say">두 번째가 첫 번째와 똑같이 나왔다면, 여러분은 외운 겁니다.</div>
+  </div>
+</section>
+
+<!-- 08 활동지 -->
+<section>
+  <div class="sec-head">
+    <span class="sec-num">08</span>
+    <h2>학생 활동지</h2>
+    <span class="sec-note">배부용 · 인쇄</span>
+  </div>
+
+  <p style="margin-bottom:18px;color:var(--ink-2)"><b>A4 한 장.</b> 앞면은 질문지 — 3차시에 넘어가는 것은 <b>이 앞면뿐</b>이다. 뒷면은 답변 개요 — <b>내가 갖는다.</b></p>
+
+  <div class="sheet">
+    <div class="sheet-head">
+      <h3>2차시 · 앞면 — 질문지 최종본</h3>
+      <div class="namebox">( &nbsp;&nbsp; )학년 ( &nbsp;&nbsp; )반 &nbsp; 이름 ______________</div>
+    </div>
+
+    <div class="sheet-part">
+      <div class="part-label">1 — 등급 매기고, C는 고쳐 쓰기 <span style="color:var(--ink-3);font-weight:400">※ 한 개에 24초, 고민하지 않는다</span></div>
+      <div class="tbl-wrap">
+        <table class="gtable">
+          <thead><tr><th>#</th><th class="c-g">등급</th><th>질문 — C였다면 동사를 바꿔 다시 쓴 것</th><th class="c-src">이 질문엔 ○○ 경험</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>2</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>3</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>4</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>5</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>6</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>7</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>8</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>9</td><td class="c-g">A B C</td><td></td><td></td></tr>
+            <tr><td>10</td><td class="c-g">A B C</td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:14px;color:var(--ink-2);margin-top:8px">※ 오른쪽 칸은 <b>소재 한 줄</b>만. 답을 쓰는 칸이 아니다. 소재가 떠오르지 않는 질문은 그 자리에서 버려도 된다.</p>
+    </div>
+
+    <div class="sheet-part">
+      <div class="part-label">2 — 리로스쿨 제출 양식 <span style="color:var(--ink-3);font-weight:400">※ 꼬리질문 한 줄을 덧붙인다</span></div>
+      <div class="submit">1. [진로활동] 3학년 기업 홍보방식 탐구 발표 / 여러 방식 중 그 기업을 고른 이유는 무엇인가요? / (꼬리) 자료는 어디서 찾았고, 믿을 만한지는 어떻게 판단했나요?
+2. [세특] 화학Ⅰ 삼투압 보고서 / 삼투압을 설명하고, 배추 절임을 고른 이유를 말해 주세요. / (꼬리) 그 예로 설명되지 않는 부분은 없었나요?
+   ⋮
+10. [행동특성 및 종합의견] …</div>
+      <div class="warn" style="margin-top:12px">
+        <b>꼬리질문 줄에는 “내가 가장 답하기 싫은 질문”을 쓴다.</b> 예상 질문이 아니다. 3차시에 면접관 역할을 맡은 친구는 <b>이 줄을 접어 가리고</b> 시작하고, 답을 들은 뒤 자기가 새로 만들어 묻는다. 그러니 이 한 줄은 남이 쓸 대본이 아니라 <b>내 약점 목록</b>이다.
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet" style="margin-top:20px">
+    <div class="sheet-head">
+      <h3>2차시 · 뒷면 — 답변 개요</h3>
+      <div class="namebox">이 면은 3차시에 넘기지 않는다</div>
+    </div>
+
+    <div class="sheet-part">
+      <div class="part-label">3 — 개요 카드 <span style="color:var(--ink-3);font-weight:400">※ 한 칸에 열 자 안팎. 문장을 쓰면 실패다</span></div>
+
+      <div class="starsheet">
+        <div class="ss-q"><b>질문 1</b> &nbsp;_______________________________________________________________</div>
+        <div class="ss-row"><div class="ss-l head">결</div><div class="ss-v">물은 것에 대한 답 한 마디 — 여기서 시작한다</div></div>
+        <div class="ss-row"><div class="ss-l">S</div><div class="ss-v">언제, 어떤 일이 있었나</div></div>
+        <div class="ss-row"><div class="ss-l">T</div><div class="ss-v">무엇이 어려웠고, 내 역할은</div></div>
+        <div class="ss-row"><div class="ss-l">A</div><div class="ss-v">내가 무엇을 어떻게 했나 &nbsp;— 가장 많이 비는 칸</div></div>
+        <div class="ss-row"><div class="ss-l">R</div><div class="ss-v">달라진 것 &nbsp;/&nbsp; 배운 것</div></div>
+      </div>
+
+      <div class="starsheet">
+        <div class="ss-q"><b>질문 2</b> &nbsp;_______________________________________________________________</div>
+        <div class="ss-row"><div class="ss-l head">결</div><div class="ss-v">&nbsp;</div></div>
+        <div class="ss-row"><div class="ss-l">S</div><div class="ss-v">&nbsp;</div></div>
+        <div class="ss-row"><div class="ss-l">T</div><div class="ss-v">&nbsp;</div></div>
+        <div class="ss-row"><div class="ss-l">A</div><div class="ss-v">&nbsp;</div></div>
+        <div class="ss-row"><div class="ss-l">R</div><div class="ss-v">&nbsp;&nbsp;/</div></div>
+      </div>
+
+      <div class="starsheet">
+        <div class="ss-q"><b>질문 3</b> &nbsp;_______________________________________________________________</div>
+        <div class="ss-row"><div class="ss-l head">결</div><div class="ss-v">&nbsp;</div></div>
+        <div class="ss-row"><div class="ss-l">S</div><div class="ss-v">&nbsp;</div></div>
+        <div class="ss-row"><div class="ss-l">T</div><div class="ss-v">&nbsp;</div></div>
+        <div class="ss-row"><div class="ss-l">A</div><div class="ss-v">&nbsp;</div></div>
+        <div class="ss-row"><div class="ss-l">R</div><div class="ss-v">&nbsp;&nbsp;/</div></div>
+      </div>
+    </div>
+
+    <div class="sheet-part">
+      <div class="part-label">4 — 30초 자기소개 확정본</div>
+      <div class="tbl-wrap">
+        <table>
+          <tbody>
+            <tr><td class="k">1 결론</td><td style="height:50px">저는 &nbsp; ______________________________________________ &nbsp; 학생입니다.</td></tr>
+            <tr><td class="k">2 근거</td><td style="height:62px">위 개요 카드 중 가장 강한 것 하나를 옮겨 적는다</td></tr>
+            <tr><td class="k">3 의미</td><td style="height:50px">그래서 &nbsp; _________________________________ &nbsp; 을(를) 공부하고 싶습니다.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:14px;color:var(--ink-2);margin-top:8px">짝에게 발표한 뒤 다섯 항목 채점 &nbsp;&nbsp; 지난 시간 <b>1</b>○△✗ <b>2</b>○△✗ <b>3</b>○△✗ <b>4</b>○△✗ <b>5</b>○△✗ &nbsp;&nbsp;／&nbsp;&nbsp; 오늘 <b>1</b>○△✗ <b>2</b>○△✗ <b>3</b>○△✗ <b>4</b>○△✗ <b>5</b>○△✗</p>
+    </div>
+
+    <div class="sheet-part">
+      <div class="part-label">5 — 다음 시간까지</div>
+      <ul class="tight">
+        <li>개요 카드를 <b>일곱 장까지</b> 채운다. 소재 한 줄을 적어 둔 질문 중 <b>넷</b>만 다섯 줄로 채우면 된다. <b>셋은 버려도 된다.</b></li>
+        <li>각 카드를 보며 <b>소리 내어 한 번씩</b> 말해 본다. 휴대폰으로 녹음해 들어 보면 말끝이 흐려지는 지점이 바로 들린다. 이때 요령이 하나 있다 — <b>내 목소리가 아니라 남의 목소리라고 생각하고</b> 들어야 잘잘못이 보인다.</li>
+        <li>다음 시간 준비물 — <b>이 활동지 앞뒷면</b>, 학생부 출력본, <b>조별 촬영용 휴대폰 1대</b>.</li>
+        <li>다음 시간에는 내 질문지를 <b>다른 친구가 들고</b> 나에게 묻는다. 나도 남의 질문지로 면접관이 된다. 처음에는 서로 어색하고 머뭇거릴 것이다. <b>그것이 정상이고, 조금만 지나면 진짜 면접처럼 된다.</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="closing">외운 문장은 첫 질문까지만 버틴다. 다섯 줄짜리 개요는 세 번째 꼬리질문까지 버틴다.</p>
+</section>
+
+</div>
+</div>
+
+<script>
+(function(){
+  var KEY = 'interview-lesson-2';
+  var content = document.getElementById('content');
+  var editBtn = document.getElementById('editBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var hint = document.getElementById('editHint');
+  var editing = false;
+
+  /* 저장해 둔 편집 내용 복원 */
+  try{
+    var saved = localStorage.getItem(KEY);
+    if(saved){ content.innerHTML = saved; }
+  }catch(e){}
+
+  /* 접힘/펼침 · 탭 — 위임 방식이라 편집 후에도 계속 동작 */
+  document.addEventListener('click', function(e){
+    if(!e.target || !e.target.closest) return;
+
+    var tab = e.target.closest('[data-tab]');
+    if(tab){
+      var id = tab.getAttribute('data-tab');
+      var group = tab.closest('[data-tabgroup]');
+      if(group){
+        group.querySelectorAll('[data-tab]').forEach(function(b){ b.classList.toggle('cur', b === tab); });
+        group.querySelectorAll('.trackpanel').forEach(function(p){ p.classList.toggle('off', p.id !== id); });
+      }
+      return;
+    }
+
+    var btn = e.target.closest('[data-toggle]');
+    if(!btn) return;
+    var kind = btn.getAttribute('data-toggle');
+    var opened;
+    if(kind === 'tnote'){
+      var notes = Array.prototype.slice.call(document.querySelectorAll('.tnote'));
+      if(!notes.length) return;
+      opened = notes[0].hidden;
+      notes.forEach(function(n){ n.hidden = !opened; });
+    } else {
+      var el = document.getElementById(kind);
+      if(!el) return;
+      el.hidden = !el.hidden;
+      opened = !el.hidden;
+    }
+    btn.textContent = opened ? btn.getAttribute('data-hide') : btn.getAttribute('data-show');
+    btn.setAttribute('aria-expanded', String(opened));
+  });
+
+  /* 저장 전에 접힘 상태와 탭을 처음 상태로 되돌린다 */
+  function normalize(){
+    document.querySelectorAll('.tnote').forEach(function(n){ n.hidden = true; });
+    document.querySelectorAll('[data-toggle]').forEach(function(b){
+      var kind = b.getAttribute('data-toggle');
+      if(kind !== 'tnote'){
+        var el = document.getElementById(kind);
+        if(el) el.hidden = true;
+      }
+      b.textContent = b.getAttribute('data-show');
+      b.setAttribute('aria-expanded', 'false');
+    });
+    document.querySelectorAll('[data-tabgroup]').forEach(function(g){
+      var btns = g.querySelectorAll('[data-tab]');
+      var panels = g.querySelectorAll('.trackpanel');
+      btns.forEach(function(b, i){ b.classList.toggle('cur', i === 0); });
+      panels.forEach(function(p, i){ p.classList.toggle('off', i !== 0); });
+    });
+  }
+
+  function save(){
+    normalize();
+    try{
+      localStorage.setItem(KEY, content.innerHTML);
+      hint.textContent = '저장했습니다. 이 브라우저에서 다시 열어도 유지됩니다.';
+    }catch(e){
+      hint.textContent = '이 브라우저에서는 저장이 막혀 있어, 창을 닫으면 편집이 사라집니다.';
+    }
+  }
+
+  editBtn.addEventListener('click', function(){
+    editing = !editing;
+    content.setAttribute('contenteditable', editing ? 'true' : 'false');
+    document.body.classList.toggle('editing', editing);
+    editBtn.textContent = editing ? editBtn.getAttribute('data-hide') : editBtn.getAttribute('data-show');
+    resetBtn.hidden = !editing;
+    if(editing){
+      hint.textContent = '고칠 문구를 눌러 바로 쓰세요. 다 고쳤으면 왼쪽 버튼을 다시 누릅니다.';
+    } else {
+      save();
+    }
+  });
+
+  resetBtn.addEventListener('click', function(){
+    if(!window.confirm('편집한 내용을 모두 지우고 처음 상태로 되돌릴까요?')) return;
+    try{ localStorage.removeItem(KEY); }catch(e){}
+    window.location.reload();
+  });
+})();
+</script>
+</body>
+</html>
